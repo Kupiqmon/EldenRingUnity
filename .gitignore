@@ -1,7 +1,4 @@
-/Library/PackageCache
-/Library/StateCache
-/Library/ShaderCache
-/Library/BurstCache
+/Temp
+/Library
 /.vs
 .vsconfig
-/Temp
