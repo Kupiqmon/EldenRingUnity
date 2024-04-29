@@ -60,50 +60,50 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Character\Player\PlayerLocomotionManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterStatsManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Character_Save_Slot.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerStatsManager.cs" />
+    <Compile Include="Assets\Scripts\Effects\TakeStaminaDamageEffect.cs" />
+    <Compile Include="Assets\Scripts\Effects\WorldCharacterEffectsManager.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterEquipmentManager.cs" />
+    <Compile Include="Assets\Scripts\Effects\TakeDamageEffect.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterLocomotionManager.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerInputManager.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerInventoryManager.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerAnimatorManager.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterInventoryManager.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIHudManager.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerSoundFXManager.cs" />
+    <Compile Include="Assets\Scripts\UI\UI_StatBar.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerEffectsManager.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterStatsManager.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponItem.cs" />
     <Compile Include="Assets\Scripts\Items\MeleeWeaponItem.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponModelInstantiationSlot.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerStatsManager.cs" />
     <Compile Include="Assets\Scenes\PrintToConsole.cs" />
     <Compile Include="Assets\Scripts\Animator\ResetIsJumping.cs" />
-    <Compile Include="Assets\Scripts\Effects\TakeStaminaDamageEffect.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerEquipmentManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterEffectsManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerNetworkManager.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSoundFXManager.cs" />
-    <Compile Include="Assets\Scripts\Effects\WorldCharacterEffectsManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterEquipmentManager.cs" />
     <Compile Include="Assets\PlayerControls.cs" />
-    <Compile Include="Assets\Scripts\Effects\TakeDamageEffect.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterLocomotionManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerInputManager.cs" />
     <Compile Include="Assets\Scripts\Effects\InstantCharacterEffect.cs" />
     <Compile Include="Assets\Scripts\Colliders\DamageCollider.cs" />
     <Compile Include="Assets\Scripts\Menu Scene\TitleScreenManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterAnimatorManager.cs" />
     <Compile Include="Assets\Scripts\Menu Scene\TitleScreenLoadMenuInputManager.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Match_Scroll_Wheel_To_Selected_Button.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerInventoryManager.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSaveGameManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIPopUpManager.cs" />
     <Compile Include="Assets\Scripts\Character\ResetActionFlag.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerAnimatorManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterInventoryManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIHudManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIManager.cs" />
     <Compile Include="Assets\Scripts\Game Saving\SaveFileDataWriter.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerSoundFXManager.cs" />
     <Compile Include="Assets\Scripts\Game Saving\CharacterSaveData.cs" />
-    <Compile Include="Assets\Scripts\UI\UI_StatBar.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerEffectsManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterSoundFXManager.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -758,8 +758,17 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
@@ -775,6 +784,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
@@ -797,6 +809,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
@@ -805,6 +820,9 @@
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -824,17 +842,23 @@
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
       <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
@@ -848,11 +872,20 @@
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
