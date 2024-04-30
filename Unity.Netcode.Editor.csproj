@@ -59,15 +59,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AssemblyInfo.cs">
-      <Link>Editor\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerHelper.cs">
-      <Link>Editor\NetworkManagerHelper.cs</Link>
-    </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\HiddenScriptEditor.cs">
-      <Link>Editor\HiddenScriptEditor.cs</Link>
-    </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeSettingsProvider.cs">
       <Link>Editor\Configuration\NetcodeSettingsProvider.cs</Link>
     </Compile>
@@ -77,11 +68,26 @@
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetworkPrefabProcessor.cs">
       <Link>Editor\Configuration\NetworkPrefabProcessor.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerRelayIntegration.cs">
-      <Link>Editor\NetworkManagerRelayIntegration.cs</Link>
-    </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsProjectSettings.cs">
       <Link>Editor\Configuration\NetcodeForGameObjectsProjectSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsSettings.cs">
+      <Link>Editor\Configuration\NetcodeForGameObjectsSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkObjectEditor.cs">
+      <Link>Editor\NetworkObjectEditor.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AssemblyInfo.cs">
+      <Link>Editor\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerHelper.cs">
+      <Link>Editor\NetworkManagerHelper.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\HiddenScriptEditor.cs">
+      <Link>Editor\HiddenScriptEditor.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerRelayIntegration.cs">
+      <Link>Editor\NetworkManagerRelayIntegration.cs</Link>
     </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerEditor.cs">
       <Link>Editor\NetworkManagerEditor.cs</Link>
@@ -91,12 +97,6 @@
     </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AnticipatedNetworkTransformEditor.cs">
       <Link>Editor\AnticipatedNetworkTransformEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsSettings.cs">
-      <Link>Editor\Configuration\NetcodeForGameObjectsSettings.cs</Link>
-    </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkObjectEditor.cs">
-      <Link>Editor\NetworkObjectEditor.cs</Link>
     </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkTransformEditor.cs">
       <Link>Editor\NetworkTransformEditor.cs</Link>

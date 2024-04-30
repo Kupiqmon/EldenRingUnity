@@ -62,12 +62,6 @@
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\INetworkSerializableILPP.cs">
       <Link>Editor\CodeGen\INetworkSerializableILPP.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\CodeGenHelpers.cs">
-      <Link>Editor\CodeGen\CodeGenHelpers.cs</Link>
-    </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporterProvider.cs">
-      <Link>Editor\CodeGen\PostProcessorReflectionImporterProvider.cs</Link>
-    </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorAssemblyResolver.cs">
       <Link>Editor\CodeGen\PostProcessorAssemblyResolver.cs</Link>
     </Compile>
@@ -79,6 +73,12 @@
     </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\INetworkMessageILPP.cs">
       <Link>Editor\CodeGen\INetworkMessageILPP.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\CodeGenHelpers.cs">
+      <Link>Editor\CodeGen\CodeGenHelpers.cs</Link>
+    </Compile>
+    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporterProvider.cs">
+      <Link>Editor\CodeGen\PostProcessorReflectionImporterProvider.cs</Link>
     </Compile>
     <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporter.cs">
       <Link>Editor\CodeGen\PostProcessorReflectionImporter.cs</Link>
