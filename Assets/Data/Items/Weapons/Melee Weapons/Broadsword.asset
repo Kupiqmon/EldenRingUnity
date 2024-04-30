@@ -17,8 +17,8 @@ MonoBehaviour:
   itemDescription: 'A Long Sword
 
 '
-  itemID: 0
-  weaponModel: {fileID: 919132149155446097, guid: ca3ad38c617ff5041936344a4676693a, type: 3}
+  itemID: 2
+  weaponModel: {fileID: 4847283920555480134, guid: 1c03eae34229dcf4483c2227fd046ab6, type: 3}
   strengthREQ: 10
   dexREQ: 10
   intREQ: 0
@@ -30,3 +30,4 @@ MonoBehaviour:
   lightningDamage: 0
   poiseDamage: 25
   baseStaminaCost: 20
+  oh_RB_Action: {fileID: 11400000, guid: 86224e5e302f4fe488ae28c837f369dc, type: 2}

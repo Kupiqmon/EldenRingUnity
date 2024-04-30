@@ -19,7 +19,6 @@ namespace SG
 
         [Header("Flags")]
         public bool isPerformingAction = false;
-        public bool isJumping = false;
         public bool isGrounded = true;
         public bool applyRootMotion = false;
         public bool canRotate = true;
@@ -35,6 +34,11 @@ namespace SG
             characterNetworkManager = GetComponent<CharacterNetworkManager>();
             characterEffectsManager = GetComponent<CharacterEffectsManager>();
             characterAnimatorManager = GetComponent<CharacterAnimatorManager>();
+        }
+
+        protected virtual void Start()
+        {
+            IgnoreMyOwnColliders();
         }
 
         protected virtual void Update()
@@ -99,6 +103,31 @@ namespace SG
         public virtual void ReviveCharacter()
         {
 
+        }
+
+        protected virtual void IgnoreMyOwnColliders()
+        {
+            Collider characterControllerCollider = GetComponent<Collider>();
+            Collider[] damageableCharacterColliders = GetComponentsInChildren<Collider>();
+            List<Collider> ignoreColliders = new List<Collider>();
+
+            //  ADDS ALL OF OUR DAMAGEABLE CHARACTER COLLIDERS, TO THE LIST THAT WILL BE USED TO IGNORE COLLISIONS
+            foreach (var collider in damageableCharacterColliders)
+            {
+                ignoreColliders.Add(collider);
+            }
+
+            //  ADDS OUR CHARACTER CONTROLLER COLLIDER TO THE LIST THAT WILL BE USED TO IGNORE COLLISIONS
+            ignoreColliders.Add(characterControllerCollider);
+
+            //  GOES THROUGH EVERY COLLIDER ON THE LIST, AND IGNORES COLLISION WITH EACH OTHER
+            foreach (var collider in ignoreColliders)
+            {
+                foreach (var otherCollider in ignoreColliders)
+                {
+                    Physics.IgnoreCollision(collider, otherCollider, true);
+                }
+            }
         }
     }
 }
