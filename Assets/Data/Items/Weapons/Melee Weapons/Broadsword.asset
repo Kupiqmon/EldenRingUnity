@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b311478f57a1bf14a83ec2131d3f56bd, type: 3}
-  m_Name: Straight Sword
+  m_Name: Broadsword
   m_EditorClassIdentifier: 
-  itemName: Straight Sword
+  itemName: Long Sword
   itemIcon: {fileID: 0}
-  itemDescription: 'A Straight Sword
+  itemDescription: 'A Long Sword
 
 '
   itemID: 0
-  weaponModel: {fileID: 919132149155446097, guid: 2d8347fb7d323db43989b668cf86a6d2, type: 3}
+  weaponModel: {fileID: 919132149155446097, guid: ca3ad38c617ff5041936344a4676693a, type: 3}
   strengthREQ: 10
   dexREQ: 10
   intREQ: 0
