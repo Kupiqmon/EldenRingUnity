@@ -62,8 +62,10 @@
     <Compile Include="Assets\Scripts\Character\Player\PlayerLocomotionManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterNetworkManager.cs" />
+    <Compile Include="Assets\Scripts\Items\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Character_Save_Slot.cs" />
+    <Compile Include="Assets\Scripts\World Managers\WorldItemDatabase.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerStatsManager.cs" />
     <Compile Include="Assets\Scripts\Effects\TakeStaminaDamageEffect.cs" />
     <Compile Include="Assets\Scripts\Effects\WorldCharacterEffectsManager.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Assets\Scripts\Character\CharacterStatsManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponItem.cs" />
+    <Compile Include="Assets\Scripts\Colliders\MeleeWeaponDamageCollider.cs" />
     <Compile Include="Assets\Scripts\Items\MeleeWeaponItem.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponModelInstantiationSlot.cs" />
