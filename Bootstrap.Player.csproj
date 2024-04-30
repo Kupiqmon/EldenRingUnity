@@ -9,11 +9,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
-    <ProjectGuid>{09BBF969-316E-8B6F-702C-68DC9A01BA3C}</ProjectGuid>
+    <RootNamespace>Unity.Netcode.Samples</RootNamespace>
+    <ProjectGuid>{DDA970C4-220E-95FD-CCCC-D33DCA7A9F3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Bootstrap</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -59,79 +59,17 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Character\Player\PlayerLocomotionManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerCamera.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterNetworkManager.cs" />
-    <Compile Include="Assets\Scripts\Items\WeaponManager.cs" />
-    <Compile Include="Assets\Scripts\Items\Item.cs" />
-    <Compile Include="Assets\Scripts\UI\UI_Character_Save_Slot.cs" />
-    <Compile Include="Assets\Scripts\World Managers\WorldItemDatabase.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerStatsManager.cs" />
-    <Compile Include="Assets\Scripts\Effects\TakeStaminaDamageEffect.cs" />
-    <Compile Include="Assets\Scripts\Effects\WorldCharacterEffectsManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterEquipmentManager.cs" />
-    <Compile Include="Assets\Scripts\Effects\TakeDamageEffect.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterLocomotionManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerInputManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerInventoryManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerAnimatorManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterInventoryManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIHudManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerSoundFXManager.cs" />
-    <Compile Include="Assets\Scripts\UI\UI_StatBar.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerEffectsManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterStatsManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
-    <Compile Include="Assets\Scripts\Items\WeaponItem.cs" />
-    <Compile Include="Assets\Scripts\Colliders\MeleeWeaponDamageCollider.cs" />
-    <Compile Include="Assets\Scripts\Items\MeleeWeaponItem.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\Items\WeaponModelInstantiationSlot.cs" />
-    <Compile Include="Assets\Scripts\Enums.cs" />
-    <Compile Include="Assets\Scenes\PrintToConsole.cs" />
-    <Compile Include="Assets\Scripts\Animator\ResetIsJumping.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerEquipmentManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterEffectsManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\PlayerNetworkManager.cs" />
-    <Compile Include="Assets\Scripts\World Managers\WorldSoundFXManager.cs" />
-    <Compile Include="Assets\PlayerControls.cs" />
-    <Compile Include="Assets\Scripts\Effects\InstantCharacterEffect.cs" />
-    <Compile Include="Assets\Scripts\Colliders\DamageCollider.cs" />
-    <Compile Include="Assets\Scripts\Menu Scene\TitleScreenManager.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterAnimatorManager.cs" />
-    <Compile Include="Assets\Scripts\Menu Scene\TitleScreenLoadMenuInputManager.cs" />
-    <Compile Include="Assets\Scripts\UI\UI_Match_Scroll_Wheel_To_Selected_Button.cs" />
-    <Compile Include="Assets\Scripts\World Managers\WorldSaveGameManager.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIPopUpManager.cs" />
-    <Compile Include="Assets\Scripts\Character\ResetActionFlag.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIManager.cs" />
-    <Compile Include="Assets\Scripts\Game Saving\SaveFileDataWriter.cs" />
-    <Compile Include="Assets\Scripts\Game Saving\CharacterSaveData.cs" />
-    <Compile Include="Assets\Scripts\Character\CharacterSoundFXManager.cs" />
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Samples\Bootstrap\Scripts\BootstrapPlayer.cs">
+      <Link>Samples\Bootstrap\Scripts\BootstrapPlayer.cs</Link>
+    </Compile>
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Samples\Bootstrap\Scripts\BootstrapManager.cs">
+      <Link>Samples\Bootstrap\Scripts\BootstrapManager.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Scripts\README.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Samples\Bootstrap\Scripts\Bootstrap.asmdef">
+      <Link>Samples\Bootstrap\Scripts\Bootstrap.asmdef</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -707,70 +645,11 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Networking.Transport">
-      <HintPath>Library\ScriptAssemblies\Unity.Networking.Transport.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem">
-      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.Netcode.Components.Player.csproj">
-      <Project>{3BBE7798-49D3-E1A4-B50D-ABED5DDB784F}</Project>
-      <Name>Unity.Netcode.Components.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Bootstrap.Player.csproj">
-      <Project>{DDA970C4-220E-95FD-CCCC-D33DCA7A9F3E}</Project>
-      <Name>Bootstrap.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Netcode.Runtime.Player.csproj">
       <Project>{097BE70E-BA18-613A-BDC8-45EC18ACA4E6}</Project>
       <Name>Unity.Netcode.Runtime.Player</Name>

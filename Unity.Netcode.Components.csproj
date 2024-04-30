@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Unity.Netcode.Components</RootNamespace>
-    <ProjectGuid>{257B975C-FE2A-5916-A124-BB2B4B52DAFA}</ProjectGuid>
+    <ProjectGuid>{3C07ADE8-954E-6AED-ADE4-21092F68D47F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Netcode.Components</AssemblyName>
@@ -59,45 +59,45 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector4.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector4.cs">
       <Link>Components\HalfVector4.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody2D.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody2D.cs">
       <Link>Components\NetworkRigidbody2D.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Interpolator\BufferedLinearInterpolator.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Interpolator\BufferedLinearInterpolator.cs">
       <Link>Components\Interpolator\BufferedLinearInterpolator.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\QuaternionCompressor.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\QuaternionCompressor.cs">
       <Link>Components\QuaternionCompressor.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody.cs">
       <Link>Components\NetworkRigidbody.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkAnimator.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkAnimator.cs">
       <Link>Components\NetworkAnimator.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkTransform.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkTransform.cs">
       <Link>Components\NetworkTransform.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AssemblyInfo.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AssemblyInfo.cs">
       <Link>Components\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkDeltaPosition.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkDeltaPosition.cs">
       <Link>Components\NetworkDeltaPosition.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AnticipatedNetworkTransform.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AnticipatedNetworkTransform.cs">
       <Link>Components\AnticipatedNetworkTransform.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector3.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector3.cs">
       <Link>Components\HalfVector3.cs</Link>
     </Compile>
-    <Compile Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Messages\NetworkTransformMessage.cs">
+    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Messages\NetworkTransformMessage.cs">
       <Link>Components\Messages\NetworkTransformMessage.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Mon\Non-Gaming\Unity\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\com.unity.netcode.components.asmdef">
+    <None Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\com.unity.netcode.components.asmdef">
       <Link>Components\com.unity.netcode.components.asmdef</Link>
     </None>
   </ItemGroup>
@@ -353,6 +353,12 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -771,7 +777,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Netcode.Runtime.csproj">
-      <Project>{4C7EAB76-7172-4C46-848E-58ECF7FE1CF9}</Project>
+      <Project>{4324C2E8-6F3F-C7DF-CBB5-C7B5DD12EE8F}</Project>
       <Name>Unity.Netcode.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
