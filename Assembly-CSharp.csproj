@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\UI\UI_Match_Scroll_Wheel_To_Selected_Button.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSaveGameManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIPopUpManager.cs" />
+    <Compile Include="Assets\Scripts\Character\ResetActionFlag.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterCombatManeger.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIManager.cs" />
     <Compile Include="Assets\Scripts\Game Saving\SaveFileDataWriter.cs" />
