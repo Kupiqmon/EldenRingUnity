@@ -59,47 +59,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector4.cs">
-      <Link>Components\HalfVector4.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody2D.cs">
-      <Link>Components\NetworkRigidbody2D.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Interpolator\BufferedLinearInterpolator.cs">
-      <Link>Components\Interpolator\BufferedLinearInterpolator.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\QuaternionCompressor.cs">
-      <Link>Components\QuaternionCompressor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody.cs">
-      <Link>Components\NetworkRigidbody.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkAnimator.cs">
-      <Link>Components\NetworkAnimator.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkTransform.cs">
-      <Link>Components\NetworkTransform.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AssemblyInfo.cs">
-      <Link>Components\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkDeltaPosition.cs">
-      <Link>Components\NetworkDeltaPosition.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AnticipatedNetworkTransform.cs">
-      <Link>Components\AnticipatedNetworkTransform.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector3.cs">
-      <Link>Components\HalfVector3.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Messages\NetworkTransformMessage.cs">
-      <Link>Components\Messages\NetworkTransformMessage.cs</Link>
-    </Compile>
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector4.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody2D.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Interpolator\BufferedLinearInterpolator.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\QuaternionCompressor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkRigidbody.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkAnimator.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkTransform.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AssemblyInfo.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\NetworkDeltaPosition.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\AnticipatedNetworkTransform.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\HalfVector3.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\Messages\NetworkTransformMessage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\com.unity.netcode.components.asmdef">
-      <Link>Components\com.unity.netcode.components.asmdef</Link>
-    </None>
+    <None Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Components\com.unity.netcode.components.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
