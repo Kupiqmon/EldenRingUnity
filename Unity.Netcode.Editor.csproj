@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Unity.Netcode.Editor</RootNamespace>
-    <ProjectGuid>{67DB5E26-F203-1177-A18B-BC29A2FABABB}</ProjectGuid>
+    <ProjectGuid>{7B5125B6-3586-1CB3-7F3E-B1A2C2A0F9C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Netcode.Editor</AssemblyName>
@@ -59,53 +59,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeSettingsProvider.cs">
-      <Link>Editor\Configuration\NetcodeSettingsProvider.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetworkPrefabsEditor.cs">
-      <Link>Editor\Configuration\NetworkPrefabsEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetworkPrefabProcessor.cs">
-      <Link>Editor\Configuration\NetworkPrefabProcessor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsProjectSettings.cs">
-      <Link>Editor\Configuration\NetcodeForGameObjectsProjectSettings.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsSettings.cs">
-      <Link>Editor\Configuration\NetcodeForGameObjectsSettings.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkObjectEditor.cs">
-      <Link>Editor\NetworkObjectEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AssemblyInfo.cs">
-      <Link>Editor\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerHelper.cs">
-      <Link>Editor\NetworkManagerHelper.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\HiddenScriptEditor.cs">
-      <Link>Editor\HiddenScriptEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerRelayIntegration.cs">
-      <Link>Editor\NetworkManagerRelayIntegration.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerEditor.cs">
-      <Link>Editor\NetworkManagerEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkBehaviourEditor.cs">
-      <Link>Editor\NetworkBehaviourEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AnticipatedNetworkTransformEditor.cs">
-      <Link>Editor\AnticipatedNetworkTransformEditor.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkTransformEditor.cs">
-      <Link>Editor\NetworkTransformEditor.cs</Link>
-    </Compile>
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeSettingsProvider.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetworkPrefabsEditor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetworkPrefabProcessor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsProjectSettings.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\Configuration\NetcodeForGameObjectsSettings.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkObjectEditor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AssemblyInfo.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerHelper.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\HiddenScriptEditor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerRelayIntegration.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkManagerEditor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkBehaviourEditor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\AnticipatedNetworkTransformEditor.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\NetworkTransformEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\com.unity.netcode.editor.asmdef">
-      <Link>Editor\com.unity.netcode.editor.asmdef</Link>
-    </None>
+    <None Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\com.unity.netcode.editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -362,12 +332,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -801,11 +765,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Netcode.Runtime.csproj">
-      <Project>{4324C2E8-6F3F-C7DF-CBB5-C7B5DD12EE8F}</Project>
+      <Project>{4C7EAB76-7172-4C46-848E-58ECF7FE1CF9}</Project>
       <Name>Unity.Netcode.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Netcode.Components.csproj">
-      <Project>{3C07ADE8-954E-6AED-ADE4-21092F68D47F}</Project>
+      <Project>{257B975C-FE2A-5916-A124-BB2B4B52DAFA}</Project>
       <Name>Unity.Netcode.Components</Name>
     </ProjectReference>
   </ItemGroup>

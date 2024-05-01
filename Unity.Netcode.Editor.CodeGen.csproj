@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Unity.Netcode.Editor.CodeGen</RootNamespace>
-    <ProjectGuid>{03BA3995-A70C-1453-95DC-D38E9EE4139A}</ProjectGuid>
+    <ProjectGuid>{C851C4F1-4003-BBD2-DECD-C47ACA63AD33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Netcode.Editor.CodeGen</AssemblyName>
@@ -59,35 +59,17 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\INetworkSerializableILPP.cs">
-      <Link>Editor\CodeGen\INetworkSerializableILPP.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorAssemblyResolver.cs">
-      <Link>Editor\CodeGen\PostProcessorAssemblyResolver.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\NetworkBehaviourILPP.cs">
-      <Link>Editor\CodeGen\NetworkBehaviourILPP.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\RuntimeAccessModifiersILPP.cs">
-      <Link>Editor\CodeGen\RuntimeAccessModifiersILPP.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\INetworkMessageILPP.cs">
-      <Link>Editor\CodeGen\INetworkMessageILPP.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\CodeGenHelpers.cs">
-      <Link>Editor\CodeGen\CodeGenHelpers.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporterProvider.cs">
-      <Link>Editor\CodeGen\PostProcessorReflectionImporterProvider.cs</Link>
-    </Compile>
-    <Compile Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporter.cs">
-      <Link>Editor\CodeGen\PostProcessorReflectionImporter.cs</Link>
-    </Compile>
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\INetworkSerializableILPP.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorAssemblyResolver.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\NetworkBehaviourILPP.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\RuntimeAccessModifiersILPP.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\INetworkMessageILPP.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\CodeGenHelpers.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporterProvider.cs" />
+    <Compile Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\PostProcessorReflectionImporter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Deadline\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\com.unity.netcode.editor.codegen.asmdef">
-      <Link>Editor\CodeGen\com.unity.netcode.editor.codegen.asmdef</Link>
-    </None>
+    <None Include="Packages\com.unity.netcode.gameobjects\com.unity.netcode.gameobjects\Editor\CodeGen\com.unity.netcode.editor.codegen.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -344,12 +326,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -753,7 +729,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Netcode.Runtime.csproj">
-      <Project>{4324C2E8-6F3F-C7DF-CBB5-C7B5DD12EE8F}</Project>
+      <Project>{4C7EAB76-7172-4C46-848E-58ECF7FE1CF9}</Project>
       <Name>Unity.Netcode.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
