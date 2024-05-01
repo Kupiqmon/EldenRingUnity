@@ -136,7 +136,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: root.x
+    rootMotionBoneName: c_traj
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
