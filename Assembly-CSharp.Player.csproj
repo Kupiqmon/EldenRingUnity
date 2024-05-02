@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\UI\UI_Match_Scroll_Wheel_To_Selected_Button.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSaveGameManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIPopUpManager.cs" />
+    <Compile Include="Assets\Scripts\Character\ResetActionFlag.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterCombatManeger.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIManager.cs" />
     <Compile Include="Assets\Scripts\Game Saving\SaveFileDataWriter.cs" />
@@ -767,6 +768,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Netcode.Components.Player.csproj">
+      <Project>{3BBE7798-49D3-E1A4-B50D-ABED5DDB784F}</Project>
+      <Name>Unity.Netcode.Components.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Bootstrap.Player.csproj">
+      <Project>{DDA970C4-220E-95FD-CCCC-D33DCA7A9F3E}</Project>
+      <Name>Bootstrap.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Netcode.Runtime.Player.csproj">
+      <Project>{097BE70E-BA18-613A-BDC8-45EC18ACA4E6}</Project>
+      <Name>Unity.Netcode.Runtime.Player</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
