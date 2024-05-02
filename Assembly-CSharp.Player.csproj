@@ -67,12 +67,15 @@
     <Compile Include="Assets\Scripts\UI\UI_Character_Save_Slot.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldItemDatabase.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerStatsManager.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\PlayerCombatManager.cs" />
     <Compile Include="Assets\Scripts\Effects\TakeStaminaDamageEffect.cs" />
     <Compile Include="Assets\Scripts\Effects\WorldCharacterEffectsManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterEquipmentManager.cs" />
+    <Compile Include="Assets\Scripts\Items\WeaponItemAction.cs" />
     <Compile Include="Assets\Scripts\Effects\TakeDamageEffect.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterLocomotionManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerInputManager.cs" />
+    <Compile Include="Assets\Scripts\World Managers\WorldActionManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerInventoryManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerAnimatorManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterInventoryManager.cs" />
@@ -82,6 +85,7 @@
     <Compile Include="Assets\Scripts\Character\Player\PlayerEffectsManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterStatsManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
+    <Compile Include="Assets\Scripts\Items\Weapon Actions\LightAttackWeaponItemAction.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponItem.cs" />
     <Compile Include="Assets\Scripts\Colliders\MeleeWeaponDamageCollider.cs" />
     <Compile Include="Assets\Scripts\Items\MeleeWeaponItem.cs" />
@@ -103,7 +107,7 @@
     <Compile Include="Assets\Scripts\UI\UI_Match_Scroll_Wheel_To_Selected_Button.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSaveGameManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIPopUpManager.cs" />
-    <Compile Include="Assets\Scripts\Character\ResetActionFlag.cs" />
+    <Compile Include="Assets\Scripts\Character\CharacterCombatManeger.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIManager.cs" />
     <Compile Include="Assets\Scripts\Game Saving\SaveFileDataWriter.cs" />
     <Compile Include="Assets\Scripts\Game Saving\CharacterSaveData.cs" />
