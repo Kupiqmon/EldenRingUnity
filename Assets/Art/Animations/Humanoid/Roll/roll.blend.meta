@@ -24,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -37,7 +37,7 @@ ModelImporter:
       takeName: Scene
       internalID: -623603649343465320
       firstFrame: 1
-      lastFrame: 678
+      lastFrame: 123
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -51,16 +51,202 @@ ModelImporter:
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AoDai
+        weight: 1
+      - path: ArmRings
+        weight: 1
+      - path: BaseHair
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: LacChan
+        weight: 1
+      - path: Lycoris
+        weight: 1
+      - path: Player
+        weight: 1
+      - path: Player/root.x
+        weight: 1
+      - path: Player/root.x/spine_01.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/Flower_01.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/Flower_01.x/Flower_02.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/Flower_01.x/Flower_02.x/Flower_03.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/Flower_01.x/Flower_02.x/Flower_03.x/Flower_04.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_chin_01.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_chin_02.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_lips_bot.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_lips_bot.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_lips_bot.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_lips_bot_01.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_jawbone.x/c_lips_bot_01.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_smile.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_smile.l/c_lips_corner_mini.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_smile.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_smile.r/c_lips_corner_mini.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_top.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_top.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_top.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_top_01.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_lips_top_01.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_nose_01.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_nose_01.x/c_nose_02.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/neck.x/head.x/c_nose_03.x
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/arm_twist.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/forearm_twist.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_index1.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_index1.l/c_index2.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_index1.l/c_index2.l/c_index3.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_middle1.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_middle1.l/c_middle2.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_middle1.l/c_middle2.l/c_middle3.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_pinky1.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_pinky1.l/c_pinky2.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_pinky1.l/c_pinky2.l/c_pinky3.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_ring1.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_ring1.l/c_ring2.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_ring1.l/c_ring2.l/c_ring3.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_thumb1.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_thumb1.l/c_thumb2.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.l/arm_stretch.l/forearm_stretch.l/hand.l/c_thumb1.l/c_thumb2.l/c_thumb3.l
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/arm_twist.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/forearm_twist.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_index1.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_index1.r/c_index2.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_index1.r/c_index2.r/c_index3.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_middle1.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_middle1.r/c_middle2.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_middle1.r/c_middle2.r/c_middle3.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_pinky1.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_pinky1.r/c_pinky2.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_pinky1.r/c_pinky2.r/c_pinky3.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_ring1.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_ring1.r/c_ring2.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_ring1.r/c_ring2.r/c_ring3.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_thumb1.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_thumb1.r/c_thumb2.r
+        weight: 1
+      - path: Player/root.x/spine_01.x/spine_02.x/spine_03.x/shoulder.r/arm_stretch.r/forearm_stretch.r/hand.r/c_thumb1.r/c_thumb2.r/c_thumb3.r
+        weight: 1
+      - path: Player/root.x/thigh_stretch.l
+        weight: 1
+      - path: Player/root.x/thigh_stretch.l/leg_stretch.l
+        weight: 1
+      - path: Player/root.x/thigh_stretch.l/leg_stretch.l/foot.l
+        weight: 1
+      - path: Player/root.x/thigh_stretch.l/leg_stretch.l/foot.l/toes_01.l
+        weight: 1
+      - path: Player/root.x/thigh_stretch.l/leg_stretch.l/leg_twist.l
+        weight: 1
+      - path: Player/root.x/thigh_stretch.l/thigh_twist.l
+        weight: 1
+      - path: Player/root.x/thigh_stretch.r
+        weight: 1
+      - path: Player/root.x/thigh_stretch.r/leg_stretch.r
+        weight: 1
+      - path: Player/root.x/thigh_stretch.r/leg_stretch.r/foot.r
+        weight: 1
+      - path: Player/root.x/thigh_stretch.r/leg_stretch.r/foot.r/toes_01.r
+        weight: 1
+      - path: Player/root.x/thigh_stretch.r/leg_stretch.r/leg_twist.r
+        weight: 1
+      - path: Player/root.x/thigh_stretch.r/thigh_twist.r
+        weight: 1
+      - path: Quan
+        weight: 1
+      maskType: 1
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0.59999996
     isReadable: 0
   meshes:
     lODScreenPercentages: []
