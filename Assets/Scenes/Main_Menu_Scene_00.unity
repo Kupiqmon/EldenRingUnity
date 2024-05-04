@@ -1849,6 +1849,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 468302393463815263, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
   m_PrefabInstance: {fileID: 2866371766184628703}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &939928482 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1753162370527964786, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
+  m_PrefabInstance: {fileID: 2866371766184628703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &939928483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2373,8 +2378,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+<<<<<<< HEAD
   cameraObject: {fileID: 939928486}
   cameraPivotTransform: {fileID: 1150638435}
+=======
+  cameraObject: {fileID: 939928482}
+  cameraPivotTransform: {fileID: 2052420719}
+>>>>>>> 9762dff8e09849e27e55a6b137b22c4eeb52df57
   leftAndRightRotationSpeed: 90
   upAndDownRotationSpeed: 90
   minimumPivot: -30
@@ -3811,6 +3821,11 @@ CanvasRenderer:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9188702781917142251, guid: 2ae2e8a72871d55468fbf489aa3eb8b4, type: 3}
   m_PrefabInstance: {fileID: 5549219774433939974}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2052420719 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1323985506620352780, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
+  m_PrefabInstance: {fileID: 2866371766184628703}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2069373894
 GameObject:
