@@ -36,8 +36,8 @@ ModelImporter:
       name: walk_For
       takeName: Scene
       internalID: -623603649343465320
-      firstFrame: 162
-      lastFrame: 1317
+      firstFrame: 177
+      lastFrame: 365
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -51,7 +51,7 @@ ModelImporter:
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000

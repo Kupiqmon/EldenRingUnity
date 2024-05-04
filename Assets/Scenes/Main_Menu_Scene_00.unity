@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1893,6 +1893,11 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!20 &939928486 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1753162370527964786, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
+  m_PrefabInstance: {fileID: 2866371766184628703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1004418996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2268,6 +2273,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1150638435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1323985506620352780, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
+  m_PrefabInstance: {fileID: 2866371766184628703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1191318778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,8 +2373,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  cameraObject: {fileID: 0}
-  cameraPivotTransform: {fileID: 0}
+  cameraObject: {fileID: 939928486}
+  cameraPivotTransform: {fileID: 1150638435}
   leftAndRightRotationSpeed: 90
   upAndDownRotationSpeed: 90
   minimumPivot: -30
@@ -2372,7 +2382,7 @@ MonoBehaviour:
   cameraCollisionRadius: 0.2
   collideWithLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   leftAndRightLookAngle: 0
   upAndDownLookAngle: 0
 --- !u!1 &1425466923
