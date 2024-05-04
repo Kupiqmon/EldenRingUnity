@@ -208,6 +208,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d0767a78b6560ca4fa56f7cab7ef519c, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 9324163d22978b84ca0d31ce26b177f7, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'root.x'\n\tTransform 'c_jawbone.x'\n\tTransform
+        'forearm_stretch.r'\n\tTransform 'pinky1.l'\n\tTransform 'ring2.l'\n\tTransform
+        'middle1.r'\n\tTransform 'pinky1.r'\n\tTransform 'leg_stretch.r'\n\tTransform
+        'ring1.l'\n\tTransform 'index2.l'\n\tand more ...\n\tFrom animation clip
+        'Roll'"
+      objectReference: {fileID: 0}
     - target: {fileID: 6365266323506119186, guid: 9324163d22978b84ca0d31ce26b177f7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -405,13 +415,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.85
-  m_Radius: 0.23
+  m_Height: 1.6
+  m_Radius: 0.18
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_StepOffset: 0.15
+  m_SkinWidth: 0.04
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.85, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &572907441912962411
 MonoBehaviour:
   m_ObjectHideFlags: 0

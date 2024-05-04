@@ -14,10 +14,10 @@ namespace SG
         //  CHANGE THESE TO TWEAK CAMERA PERFORMANCE
         [Header("Camera Settings")]
         private float cameraSmoothSpeed = 1;    // THE BIGGER THIS NUMBER, THE LONGER FOR THE CAMERA TO REACH ITS POSITION DURING MOVEMENT
-        [SerializeField] float leftAndRightRotationSpeed = 110;
-        [SerializeField] float upAndDownRotationSpeed = 110;
-        [SerializeField] float minimumPivot = -20;  //  THE LOWEST POINT YOU ARE ABLE TO LOOK DOWN
-        [SerializeField] float maximumPivot = 40;   //  THE HIGHEST POINT YOU ARE ABLE TO LOOK UP
+        [SerializeField] float leftAndRightRotationSpeed = 90;
+        [SerializeField] float upAndDownRotationSpeed = 90;
+        [SerializeField] float minimumPivot = -30;  //  THE LOWEST POINT YOU ARE ABLE TO LOOK DOWN
+        [SerializeField] float maximumPivot = 60;   //  THE HIGHEST POINT YOU ARE ABLE TO LOOK UP
         [SerializeField] float cameraCollisionRadius = 0.2f;
         [SerializeField] LayerMask collideWithLayers;
 
