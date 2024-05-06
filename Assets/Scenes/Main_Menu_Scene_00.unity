@@ -2462,8 +2462,13 @@ MonoBehaviour:
   lockOnRadius: 20
   minimumViewableAngle: -50
   maximumViewableAngle: 50
+  lockOnTargetFollowSpeed: 0.7
+  setCameraHeightSpeed: 1
+  unlockedCameraHeight: 1.65
+  lockedCameraHeight: 2
   nearestLockOnTarget: {fileID: 0}
-  lockOnTargetFollowSpeed: 0.2
+  leftLockOnTarget: {fileID: 0}
+  rightLockOnTarget: {fileID: 0}
 --- !u!1 &1425466923
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,7 +5003,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1403675465858336633, guid: 84bfc078af29cf6488687886591fbe99, type: 3}
       propertyPath: weaponItemActions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1403675465858336633, guid: 84bfc078af29cf6488687886591fbe99, type: 3}
       propertyPath: weaponItemActions.Array.data[0]
@@ -5008,6 +5013,10 @@ PrefabInstance:
       propertyPath: weaponItemActions.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 57c920a4acda0d84a99bf655a18a43d1, type: 2}
+    - target: {fileID: 1403675465858336633, guid: 84bfc078af29cf6488687886591fbe99, type: 3}
+      propertyPath: weaponItemActions.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: d32f20e7cd652624099c231439f07478, type: 2}
     - target: {fileID: 1614861869848880823, guid: 84bfc078af29cf6488687886591fbe99, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -11,6 +11,8 @@ namespace SG
 
         [Header("Weapon Attack Modifiers")]
         public float light_Attack_01_Modifier;
+        public float heavy_Attack_01_Modifier;
+        public float charge_Attack_01_Modifier;
 
         protected override void Awake()
         {
@@ -67,6 +69,12 @@ namespace SG
             {
                 case AttackType.LightAttack01:
                     ApplyAttackDamageModifiers(light_Attack_01_Modifier, damageEffect);
+                    break;
+                case AttackType.HeavyAttack01:
+                    ApplyAttackDamageModifiers(heavy_Attack_01_Modifier, damageEffect);
+                    break;
+                case AttackType.ChargedAttack01:
+                    ApplyAttackDamageModifiers(charge_Attack_01_Modifier, damageEffect);
                     break;
                 default:
                     break;
