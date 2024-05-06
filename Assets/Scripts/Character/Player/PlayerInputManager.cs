@@ -29,8 +29,8 @@ namespace SG
 
         [Header("PLAYER MOVEMENT INPUT")]
         [SerializeField] Vector2 movementInput;
-        public float vertical_Input;
-        public float horizontal_Input;
+        public float verticalInput;
+        public float horizontalInput;
         public float moveAmount;
 
         [Header("PLAYER ACTION INPUT")]
@@ -258,11 +258,11 @@ namespace SG
 
         private void HandlePlayerMovementInput()
         {
-            vertical_Input = movementInput.y;
-            horizontal_Input = movementInput.x;
+            verticalInput = movementInput.y;
+            horizontalInput = movementInput.x;
 
             //  RETURNS THE ABSOLUTE NUMBER, (Meaning number without the negative sign, so its always positive)
-            moveAmount = Mathf.Clamp01(Mathf.Abs(vertical_Input) + Mathf.Abs(horizontal_Input));
+            moveAmount = Mathf.Clamp01(Mathf.Abs(verticalInput) + Mathf.Abs(horizontalInput));
 
             //  WE CLAMP THE VALUES, SO THEY ARE 0, 0.5 OR 1 (OPTIONAL)
             if (moveAmount <= 0.5 && moveAmount > 0)
@@ -288,7 +288,7 @@ namespace SG
             }
             else
             {
-                player.playerAnimatorManager.UpdateAnimatorMovementParameters(horizontal_Input, vertical_Input, player.playerNetworkManager.isSprinting.Value);
+                player.playerAnimatorManager.UpdateAnimatorMovementParameters(horizontalInput, verticalInput, player.playerNetworkManager.isSprinting.Value);
             }
 
             //  IF WE ARE LOCKED ON PASS THE HORIZONTAL MOVEMENT AS WELL

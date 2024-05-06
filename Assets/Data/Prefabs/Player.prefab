@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1479616857
+  GlobalObjectIdHash: 3378017139
   InScenePlacedSourceGlobalObjectIdHash: 1479616857
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 0
@@ -440,11 +440,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4a233c88a47916458c2d0015efc68b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityForce: -40
+  gravityForce: -5.55
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
-  groundCheckSphereRadius: 0.3
+  groundCheckSphereRadius: 1
   yVelocity: {x: 0, y: 0, z: 0}
   groundedYVelocity: -20
   fallStartYVelocity: -5
@@ -461,7 +461,7 @@ MonoBehaviour:
   jumpStaminaCost: 25
   jumpHeight: 4
   jumpForwardSpeed: 5
-  freeFallSpeed: 2
+  freeFallSpeed: 1
   dodgeStaminaCost: 25
 --- !u!143 &755135990330298951
 CharacterController:
