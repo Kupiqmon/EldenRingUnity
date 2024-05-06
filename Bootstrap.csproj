@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Unity.Netcode.Samples</RootNamespace>
-    <ProjectGuid>{37C80408-1EF0-279C-F374-85CBCAC9A9C0}</ProjectGuid>
+    <ProjectGuid>{36477C5C-DA68-559F-37BC-B7809ADC6B8B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Bootstrap</AssemblyName>
