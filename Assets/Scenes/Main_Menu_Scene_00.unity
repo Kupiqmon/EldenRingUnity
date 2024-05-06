@@ -4391,7 +4391,7 @@ PrefabInstance:
       objectReference: {fileID: 1430231270723702529, guid: bcb4c02b337a00d4d906c9832c743e59, type: 3}
     - target: {fileID: 5173580211261390424, guid: 8aaa9a14111abbe4c86e2552c2bfe740, type: 3}
       propertyPath: NetworkConfig.Prefabs.NetworkPrefabsLists.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5173580211261390424, guid: 8aaa9a14111abbe4c86e2552c2bfe740, type: 3}
       propertyPath: NetworkConfig.Prefabs.NetworkPrefabsLists.Array.data[0]
