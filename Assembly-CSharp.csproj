@@ -87,8 +87,8 @@
     <Compile Include="Assets\Scripts\Character\CharacterStatsManager.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldGameSessionManager.cs" />
+    <Compile Include="Assets\Scripts\ToggleAttackType.cs" />
     <Compile Include="Assets\Scripts\Items\Weapon Actions\LightAttackWeaponItemAction.cs" />
-    <Compile Include="Assets\Scripts\Utility_DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\Items\WeaponItem.cs" />
     <Compile Include="Assets\Scripts\Colliders\MeleeWeaponDamageCollider.cs" />
     <Compile Include="Assets\Scripts\Items\MeleeWeaponItem.cs" />
@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\Character\CharacterEffectsManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerNetworkManager.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSoundFXManager.cs" />
+    <Compile Include="Assets\Scripts\Utility\Utility_DestroyAfterTime.cs" />
     <Compile Include="Assets\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\Effects\InstantCharacterEffect.cs" />
     <Compile Include="Assets\Scripts\Colliders\DamageCollider.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="Assets\Scripts\UI\UI_Match_Scroll_Wheel_To_Selected_Button.cs" />
     <Compile Include="Assets\Scripts\World Managers\WorldSaveGameManager.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIPopUpManager.cs" />
+    <Compile Include="Assets\Scripts\Items\Weapon Actions\HeavyAttackWeaponItemAction.cs" />
     <Compile Include="Assets\Scripts\Character\ResetActionFlag.cs" />
     <Compile Include="Assets\Scripts\Character\CharacterCombatManeger.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player UI\PlayerUIManager.cs" />

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SG 
 {
-    public class ResetActionFlag : StateMachineBehaviour
+    public class ToggleAttackType : StateMachineBehaviour
     {
         CharacterManager character;
+
+        [SerializeField] AttackType attackType;
 
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -16,17 +18,7 @@ namespace SG
                 character = animator.GetComponent<CharacterManager>();
             }
 
-            //  THIS IS CALLED WHEN AN ACTION ENDS, AND THE STATE RETURNS TO "EMPTY"
-            character.isPerformingAction = false;
-            character.applyRootMotion = false;
-            character.canRotate = true;
-            character.canMove = true;
-            character.characterLocomotionManager.isRolling = false;
-
-            if (character.IsOwner)
-            {
-                character.characterNetworkManager.isJumping.Value = false;
-            }
+            character.characterCombatManager.currentAttackType = attackType;
         }
 
         // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
