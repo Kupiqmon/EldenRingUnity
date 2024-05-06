@@ -49,13 +49,11 @@ namespace SG
                 return;
 
             //  CHECK FOR "INVULNERABILITY"
-
             CalculateDamage(character);
-            //  CHECK WHICH DIRECTIONAL DAMAGE CAME FROM
-            //  PLAY A DAMAGE ANIMATION
+            PlayDirectionalBasedDamageAnimation(character);
             //  CHECK FOR BUILD UPS (POISON, BLEED ECT)
-            //  PLAY DAMAGE SOUND FX
-            //  PLAY DAMAGE VFX (BlOOD)
+            PlayDamageSFX(character);
+            PlayDamageVFX(character);
 
             //  IF CHARACTER IS A.I, CHECK FOR NEW TARGET IF CHARACTER CAUSING DAMAGE IS PRESENT
         }
@@ -86,6 +84,63 @@ namespace SG
             character.characterNetworkManager.currentHealth.Value -= finalDamageDealt;
 
             //  CALCULATE POISE DAMAGE TO DETERMINE IF THE CHARACTER WILL BE STUNNED
+        }
+
+        private void PlayDamageVFX(CharacterManager character)
+        {
+            //  IF WE HAVE FIRE DAMAGE, PLAY FIRE PARTICLES
+            //  LIGHTNING DAMAGE, LIGHTNING PARTICLES ECT
+
+            character.characterEffectsManager.PlayBloodSplatterVFX(contactPoint);
+        }
+
+        private void PlayDamageSFX(CharacterManager character)
+        {
+            AudioClip physicalDamageSFX = WorldSoundFXManager.instance.ChooseRandomSFXFromArray(WorldSoundFXManager.instance.physicalDamageSFX);
+
+            character.characterSoundFXManager.PlaySoundFX(physicalDamageSFX);
+            //  IF FIRE DAMAGE IS GREATER THAN 0, PLAY BURN SFX
+            //  IF LIGHTNING DAMAGE IS GREATER THAN 0, PLAY ZAP SFX
+        }
+
+        private void PlayDirectionalBasedDamageAnimation(CharacterManager character)
+        {
+            if (!character.IsOwner)
+                return;
+
+            if (character.isDead.Value)
+                return;
+
+            //  TODO CALCULATE IF POISE IS BROKEN
+            poiseIsBroken = true;
+
+            if (angleHitFrom >= 145 && angleHitFrom <= 180)
+            {
+                damageAnimation = character.characterAnimatorManager.GetRandomAnimationFromList(character.characterAnimatorManager.forward_Medium_Damage);
+            }
+            else if (angleHitFrom <= -145 && angleHitFrom >= -180)
+            {
+                damageAnimation = character.characterAnimatorManager.GetRandomAnimationFromList(character.characterAnimatorManager.forward_Medium_Damage);
+            }
+            else if (angleHitFrom >= -45 && angleHitFrom <= 45)
+            {
+                damageAnimation = character.characterAnimatorManager.GetRandomAnimationFromList(character.characterAnimatorManager.backward_Medium_Damage);
+            }
+            else if (angleHitFrom >= -144 && angleHitFrom <= -45)
+            {
+                damageAnimation = character.characterAnimatorManager.GetRandomAnimationFromList(character.characterAnimatorManager.left_Medium_Damage);
+            }
+            else if (angleHitFrom >= 45 && angleHitFrom <= 144)
+            {
+                damageAnimation = character.characterAnimatorManager.GetRandomAnimationFromList(character.characterAnimatorManager.right_Medium_Damage);
+            }
+
+            //  IF POISE IS BROKEN, PLAY A STAGGERING DAMAGE ANIMATION
+            if (poiseIsBroken)
+            {
+                character.characterAnimatorManager.lastDamageAnimationPlayed = damageAnimation;
+                character.characterAnimatorManager.PlayTargetActionAnimation(damageAnimation, true);
+            }
         }
     }
 }

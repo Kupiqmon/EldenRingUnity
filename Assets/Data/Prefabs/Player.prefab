@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &168024125537867493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6404694390965842987}
+  m_Layer: 7
+  m_Name: Lock On Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6404694390965842987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168024125537867493}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7396418115527228349}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949429783725512856
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,6 +77,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSlot: 1
   currentWeaponModel: {fileID: 0}
+--- !u!1 &2503106102997622400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2812384836913889367}
+  m_Layer: 7
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2812384836913889367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2503106102997622400}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7396418115527228349}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7770036894465427908
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9324163d22978b84ca0d31ce26b177f7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1772002360839799976, guid: 9324163d22978b84ca0d31ce26b177f7, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -210,13 +276,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d0767a78b6560ca4fa56f7cab7ef519c, type: 2}
     - target: {fileID: 5866666021909216657, guid: 9324163d22978b84ca0d31ce26b177f7, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'root.x'\n\tTransform 'c_jawbone.x'\n\tTransform
-        'forearm_stretch.r'\n\tTransform 'pinky1.l'\n\tTransform 'ring2.l'\n\tTransform
-        'middle1.r'\n\tTransform 'pinky1.r'\n\tTransform 'leg_stretch.r'\n\tTransform
-        'ring1.l'\n\tTransform 'index2.l'\n\tand more ...\n\tFrom animation clip
-        'Roll'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6365266323506119186, guid: 9324163d22978b84ca0d31ce26b177f7, type: 3}
       propertyPath: m_Layer
@@ -336,6 +396,7 @@ MonoBehaviour:
   characterEffectsManager: {fileID: 0}
   characterAnimatorManager: {fileID: 0}
   characterCombatManager: {fileID: 0}
+  characterSoundFXManager: {fileID: 0}
   isPerformingAction: 0
   isGrounded: 1
   applyRootMotion: 0
@@ -362,7 +423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254787c53e0c210438559ec137295cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTarget: {fileID: 0}
   currentAttackType: 0
+  lockOnTransform: {fileID: 6404694390965842987}
   currentWeaponBeingUsed: {fileID: 0}
 --- !u!114 &1362127678584060822
 MonoBehaviour:
@@ -448,6 +511,10 @@ MonoBehaviour:
   verticalMovement:
     m_InternalValue: 0
   moveAmount:
+    m_InternalValue: 0
+  currentTargetNetworkObjectID:
+    m_InternalValue: 0
+  isLockedOn:
     m_InternalValue: 0
   isSprinting:
     m_InternalValue: 0
@@ -598,6 +665,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72af70b7473e314c9320b8403308902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastDamageAnimationPlayed: 
+  hit_Forward_Medium_01: Hit_Forward_Medium_01
+  hit_Forward_Medium_02: Hit_Forward_Medium_02
+  hit_Backward_Medium_01: Hit_Backward_Medium_01
+  hit_Backward_Medium_02: Hit_Backward_Medium_02
+  hit_Left_Medium_01: Hit_Left_Medium_01
+  hit_Left_Medium_02: Hit_Left_Medium_02
+  hit_Right_Medium_01: Hit_Right_Medium_01
+  hit_Right_Medium_02: Hit_Right_Medium_02
+  forward_Medium_Damage: []
+  backward_Medium_Damage: []
+  left_Medium_Damage: []
+  right_Medium_Damage: []
 --- !u!82 &787464483757431251
 AudioSource:
   m_ObjectHideFlags: 0
@@ -720,6 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabeb3e6abddc3d4aa72bc848bf25660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodSplatterVFX: {fileID: 3548588485384254792, guid: 2f9e7dc163581394da1e00b561eed65d, type: 3}
   effectToTest: {fileID: 11400000, guid: a97ec69b20e877d4e92553932fd01a02, type: 2}
   processEffect: 0
 --- !u!4 &1770727672823158203 stripped
@@ -863,6 +944,12 @@ PrefabInstance:
     - {fileID: 5866666021909216657, guid: 0d6929c3cf2531d42974059d829696c9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -5142290252778123054, guid: 0d6929c3cf2531d42974059d829696c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6404694390965842987}
+    - targetCorrespondingSourceObject: {fileID: -5142290252778123054, guid: 0d6929c3cf2531d42974059d829696c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2812384836913889367}
     - targetCorrespondingSourceObject: {fileID: 6663130536595116367, guid: 0d6929c3cf2531d42974059d829696c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 442979693459009840}
@@ -1447,6 +1534,11 @@ CapsuleCollider:
   m_Height: 0.2
   m_Direction: 1
   m_Center: {x: -0.02, y: 0.05, z: -0.005}
+--- !u!4 &7396418115527228349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5142290252778123054, guid: 0d6929c3cf2531d42974059d829696c9, type: 3}
+  m_PrefabInstance: {fileID: 6775579138829282159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9064113871149242103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6643509982069391976, guid: 0d6929c3cf2531d42974059d829696c9, type: 3}

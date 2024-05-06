@@ -247,8 +247,8 @@ namespace SG
         private void NewGame()
         {
             //  SAVES THE NEWLY CREATED CHARACTERS STATS, AND ITEMS (WHEN CREATION SCREEN IS ADDED)
-            player.playerNetworkManager.vitality.Value = 15;
-            player.playerNetworkManager.endurance.Value = 10;
+            player.playerNetworkManager.vitality.Value = 10;
+            player.playerNetworkManager.endurance.Value = 15;
 
             SaveGame();
             StartCoroutine(LoadWorldScene());
