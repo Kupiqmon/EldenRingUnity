@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6D55783A-25C6-D4B4-E9B1-770D7B235FF1}</ProjectGuid>
+    <ProjectGuid>{A419BA9B-D9EE-1BD2-7DF5-396676C341D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -901,23 +901,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Netcode.Components.csproj">
-      <Project>{257B975C-FE2A-5916-A124-BB2B4B52DAFA}</Project>
+      <Project>{3C07ADE8-954E-6AED-ADE4-21092F68D47F}</Project>
       <Name>Unity.Netcode.Components</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Netcode.Editor.csproj">
-      <Project>{7B5125B6-3586-1CB3-7F3E-B1A2C2A0F9C0}</Project>
+      <Project>{67DB5E26-F203-1177-A18B-BC29A2FABABB}</Project>
       <Name>Unity.Netcode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Bootstrap.csproj">
-      <Project>{37C80408-1EF0-279C-F374-85CBCAC9A9C0}</Project>
+      <Project>{36477C5C-DA68-559F-37BC-B7809ADC6B8B}</Project>
       <Name>Bootstrap</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Netcode.Runtime.csproj">
-      <Project>{4C7EAB76-7172-4C46-848E-58ECF7FE1CF9}</Project>
+      <Project>{4324C2E8-6F3F-C7DF-CBB5-C7B5DD12EE8F}</Project>
       <Name>Unity.Netcode.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Netcode.Editor.PackageChecker.csproj">
-      <Project>{A7A85554-E1F5-0A76-BBBF-81C221FF3DAC}</Project>
+      <Project>{741E6FD5-3E22-4BD7-EABC-193D5FC7E7FD}</Project>
       <Name>Unity.Netcode.Editor.PackageChecker</Name>
     </ProjectReference>
   </ItemGroup>
