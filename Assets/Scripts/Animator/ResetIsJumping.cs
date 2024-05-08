@@ -17,6 +17,7 @@ namespace SG
 
             if (character.IsOwner)
             {
+                Debug.Log("IsJumping:" + character.characterNetworkManager.isJumping.Value);
                 character.characterNetworkManager.isJumping.Value = false;
             }
         }

@@ -49,7 +49,6 @@ namespace SG
                     fallingVelocityHAsBeenSet = true;
                     yVelocity.y = fallStartYVelocity;
                 }
-
                 inAirTimer = inAirTimer + Time.deltaTime;
                 character.animator.SetFloat("InAirTimer", inAirTimer);
                 Debug.Log("Before:" + yVelocity.y);
@@ -58,14 +57,22 @@ namespace SG
             }
 
             //  THERE SHOULD ALWAYS BE SOME FORCE APPLIED TO THE Y VELOCITY
-            Debug.Log("Final:" + yVelocity.y);
+            //Debug.Log("Final:" + yVelocity.y);
             character.characterController.Move(yVelocity * Time.deltaTime);
         }
 
         protected void HandleGroundCheck()
         {
-            character.isGrounded = Physics.CheckSphere(character.transform.position, groundCheckSphereRadius, groundLayer);
-            Debug.Log("isGrounded:" + character.isGrounded);
+            //character.isGrounded = Physics.CheckSphere(character.transform.position, groundCheckSphereRadius, groundLayer);
+            //Debug.Log("IsJumping:" + character.characterNetworkManager.isJumping.Value);
+            if (character.characterNetworkManager.isJumping.Value)
+            {
+                character.isGrounded = false;
+            } else
+            {
+                character.isGrounded = true;
+            }
+            //Debug.Log("isGrounded:" + character.isGrounded);
         }
 
         //  DRAWS OUR GROUND CHECK SPHERE IN SCENE VIEW
