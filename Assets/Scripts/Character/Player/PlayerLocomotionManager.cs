@@ -23,7 +23,7 @@ namespace SG
 
         [Header("Jump")]
         [SerializeField] float jumpStaminaCost = 25;
-        [SerializeField] float jumpHeight = 4;
+        [SerializeField] float jumpHeight = 2;
         [SerializeField] float jumpForwardSpeed = 5;
         [SerializeField] float freeFallSpeed = 2;
         private Vector3 jumpDirection;
@@ -257,6 +257,7 @@ namespace SG
 
         public void AttemptToPerformJump()
         {
+            
             //  IF WE ARE PERFORMING A GENERAL ACTION, WE DO NOT WANT TO ALLOW A JUMP (WILL CHANGE WHEN COMBAT IS ADDED)
             if (player.isPerformingAction)
                 return;
@@ -274,12 +275,21 @@ namespace SG
                 return;
 
             //  IF WE ARE TWO HANDING OUR WEAPON, PLAY THE TWO HANDED JUMP ANIMATION, OTHERWISE PLAY THE ONE HANDED ANIMATION ( TO DO )
-            player.playerAnimatorManager.PlayTargetActionAnimation("Main_Jump_01", false);
+            // player.playerAnimatorManager.PlayTargetActionAnimation("Main_Jump_01", false);
 
-            player.playerNetworkManager.isJumping.Value = true;
+            //player.playerNetworkManager.isJumping.Value = true;
 
-            player.playerNetworkManager.currentStamina.Value -= jumpStaminaCost;
+            //player.playerNetworkManager.currentStamina.Value -= jumpStaminaCost;
+            
+            // Calculate the jumping velocity
+            if (player.playerNetworkManager.currentStamina.Value > 0)
+            {
+                player.playerAnimatorManager.PlayTargetActionAnimation("Main_Jump_01", false);
+                player.playerNetworkManager.isJumping.Value = true;
 
+                player.playerNetworkManager.currentStamina.Value -= jumpStaminaCost;
+                ApplyJumpingVelocity();
+            }
             jumpDirection = PlayerCamera.instance.cameraObject.transform.forward * PlayerInputManager.instance.verticalInput;
             jumpDirection += PlayerCamera.instance.cameraObject.transform.right * PlayerInputManager.instance.horizontalInput;
             jumpDirection.y = 0;
@@ -306,7 +316,7 @@ namespace SG
 
         public void ApplyJumpingVelocity()
         {
-            yVelocity.y = Mathf.Sqrt(jumpHeight * -2 * gravityForce);
+            yVelocity.y = Mathf.Sqrt(jumpHeight * -1 * gravityForce);
         }
     }
 }
