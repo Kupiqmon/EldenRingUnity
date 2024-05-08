@@ -42,6 +42,7 @@ namespace SG
 
         public override void ProcessEffect(CharacterManager character)
         {
+            Debug.Log("Start debugging for VFX");
             base.ProcessEffect(character);
 
             //  IF THE CHARACTER IS DEAD, NO ADDITIONAL DAMAGE EFFECTS SHOULD BE PROCESSED

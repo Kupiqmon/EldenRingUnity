@@ -32,6 +32,7 @@ namespace SG
             //  IF WE MANUALLY HAVE PLACED A BLOOD SPLATTER VFX ON THIS MODEL, PLAY ITS VERSION
             if (bloodSplatterVFX != null)
             {
+                Debug.Log("Dummy:" + bloodSplatterVFX);
                 GameObject bloodSplatter = Instantiate(bloodSplatterVFX, contactPoint, Quaternion.identity);
             }
             //  ELSE, USE THE GENERIC (DEFAULT VERSION) WE HAVE ELSEWHERE
