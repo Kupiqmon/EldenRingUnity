@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1972,6 +1972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Input Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6589591496225409446, guid: 473b1c142e7fc144b8979e7ec5da953b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2642,6 +2646,10 @@ PrefabInstance:
     - target: {fileID: 6579880321796726145, guid: 6801b2deaa263b1409ed5505a1cba701, type: 3}
       propertyPath: m_Name
       value: Dummy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579880321796726145, guid: 6801b2deaa263b1409ed5505a1cba701, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6599709198209031502, guid: 6801b2deaa263b1409ed5505a1cba701, type: 3}
       propertyPath: m_Layer
@@ -4674,6 +4682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Camera ( Left & Right)
       objectReference: {fileID: 0}
+    - target: {fileID: 8458534522022057771, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4449030090489102424, guid: ff011ad9812dc6742ae587a3818a53ed, type: 3}
     m_RemovedGameObjects: []
@@ -4809,6 +4821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: World Network Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 1058343047656740437, guid: 8aaa9a14111abbe4c86e2552c2bfe740, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5173580211261390424, guid: 8aaa9a14111abbe4c86e2552c2bfe740, type: 3}
       propertyPath: NetworkConfig.PlayerPrefab
       value: 
@@ -4924,6 +4940,10 @@ PrefabInstance:
     - target: {fileID: 4396114249677825959, guid: 89520756198807d46bbbf8bcc3991de4, type: 3}
       propertyPath: m_Name
       value: World Character Effects Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396114249677825959, guid: 89520756198807d46bbbf8bcc3991de4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5159,6 +5179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: World Sound FX Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 9073146649425950212, guid: 6ccd2034fb3c85b4784179c1ea912f32, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5193,6 +5217,10 @@ PrefabInstance:
     - target: {fileID: 924933723742063134, guid: bed358920dd81884e8dd35afbbc174db, type: 3}
       propertyPath: m_Name
       value: World Utility Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 924933723742063134, guid: bed358920dd81884e8dd35afbbc174db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2513368697596996048, guid: bed358920dd81884e8dd35afbbc174db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5310,6 +5338,10 @@ PrefabInstance:
     - target: {fileID: 5660658055178997666, guid: 270e920c01150b945bbf184170f63517, type: 3}
       propertyPath: m_Name
       value: World Save Game Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660658055178997666, guid: 270e920c01150b945bbf184170f63517, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5485,6 +5517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: World Action Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6051207432956008287, guid: 84bfc078af29cf6488687886591fbe99, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5541,6 +5577,10 @@ PrefabInstance:
     - target: {fileID: 5046815429539571563, guid: edbd601a86abb4d4d9eaa33364853645, type: 3}
       propertyPath: m_Name
       value: World Item Database
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046815429539571563, guid: edbd601a86abb4d4d9eaa33364853645, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
