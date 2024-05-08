@@ -1302,16 +1302,18 @@ MonoBehaviour:
     m_InternalValue: 0
   isJumping:
     m_InternalValue: 0
+  isChargingAttack:
+    m_InternalValue: 0
   currentHealth:
     m_InternalValue: 0
   maxHealth:
-    m_InternalValue: 0
+    m_InternalValue: 200
   currentStamina:
     m_InternalValue: 0
   maxStamina:
     m_InternalValue: 0
   vitality:
-    m_InternalValue: 1
+    m_InternalValue: 10
   endurance:
     m_InternalValue: 1
 --- !u!114 &8826814268561463158
@@ -1335,6 +1337,7 @@ MonoBehaviour:
   characterAnimatorManager: {fileID: 0}
   characterCombatManager: {fileID: 0}
   characterSoundFXManager: {fileID: 0}
+  characterLocomotionManager: {fileID: 0}
   isPerformingAction: 0
   isGrounded: 1
   applyRootMotion: 0
@@ -1390,6 +1393,7 @@ MonoBehaviour:
   groundedYVelocity: -20
   fallStartYVelocity: -5
   inAirTimer: 0
+  isRolling: 0
 --- !u!114 &5463549609959274967
 MonoBehaviour:
   m_ObjectHideFlags: 0
