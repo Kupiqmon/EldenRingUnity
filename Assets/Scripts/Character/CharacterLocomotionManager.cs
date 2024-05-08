@@ -9,7 +9,7 @@ namespace SG
         CharacterManager character;
 
         [Header("Ground Check & Jumping")]
-        [SerializeField] protected float gravityForce = -5.55f;
+        [SerializeField] protected float gravityForce = -40f;
         [SerializeField] LayerMask groundLayer;
         [SerializeField] float groundCheckSphereRadius = 1;
         [SerializeField] protected Vector3 yVelocity;   // THE FORCE AT WHICH OUR CHARACTER IS PULLED UP OR DOWN (Jumping or Falling)
@@ -52,17 +52,20 @@ namespace SG
 
                 inAirTimer = inAirTimer + Time.deltaTime;
                 character.animator.SetFloat("InAirTimer", inAirTimer);
-
+                Debug.Log("Before:" + yVelocity.y);
                 yVelocity.y += gravityForce * Time.deltaTime;
+                Debug.Log("After:" + yVelocity.y);
             }
 
             //  THERE SHOULD ALWAYS BE SOME FORCE APPLIED TO THE Y VELOCITY
+            Debug.Log("Final:" + yVelocity.y);
             character.characterController.Move(yVelocity * Time.deltaTime);
         }
 
         protected void HandleGroundCheck()
         {
             character.isGrounded = Physics.CheckSphere(character.transform.position, groundCheckSphereRadius, groundLayer);
+            Debug.Log("isGrounded:" + character.isGrounded);
         }
 
         //  DRAWS OUR GROUND CHECK SPHERE IN SCENE VIEW
