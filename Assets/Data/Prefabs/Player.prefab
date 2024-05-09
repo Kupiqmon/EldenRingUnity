@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3378017139
+  GlobalObjectIdHash: 1479616857
   InScenePlacedSourceGlobalObjectIdHash: 1479616857
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 0
@@ -457,13 +457,13 @@ MonoBehaviour:
   verticalMovement: 0
   horizontalMovement: 0
   moveAmount: 0
-  walkingSpeed: 2
+  walkingSpeed: 1
   runningSpeed: 5
   sprintingSpeed: 6.5
   rotationSpeed: 15
   sprintingStaminaCost: 2
   jumpStaminaCost: 25
-  jumpHeight: 2
+  jumpHeight: 4
   jumpForwardSpeed: 5
   freeFallSpeed: 1
   dodgeStaminaCost: 25
