@@ -7,6 +7,8 @@ namespace SG
 {
     public class PlayerInputManager : MonoBehaviour
     {
+        public GameObject dummy;
+
         //  INPUT CONTROLS
         private PlayerControls playerControls;
 
@@ -358,10 +360,9 @@ namespace SG
                 Debug.Log("hit");
                 //  ATTEMPT TO RELOAD
 
-                SceneManager.UnloadScene("Scenes/Main_Menu_Scene_00");
-
                 SceneManager.LoadScene("Scenes/Main_Menu_Scene_00");
 
+                Destroy(dummy, 1);
             }
         }
 
