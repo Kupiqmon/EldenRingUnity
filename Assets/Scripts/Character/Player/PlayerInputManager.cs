@@ -45,6 +45,9 @@ namespace SG
         [SerializeField] bool RT_Input = false;
         [SerializeField] bool Hold_RT_Input = false;
 
+        public string level;
+        [SerializeField] bool RL_Input = false;
+        
 
         private void Awake()
         {
@@ -109,6 +112,10 @@ namespace SG
                 playerControls.PlayerActions.Dodge.performed += i => dodge_Input = true;
                 playerControls.PlayerActions.Jump.performed += i => jump_Input = true;
 
+                
+                playerControls.Reload.Reload.performed += i => RL_Input = true;
+                Debug.Log(RL_Input);
+
                 //  BUMPERS
                 playerControls.PlayerActions.RB.performed += i => RB_Input = true;
 
@@ -170,6 +177,8 @@ namespace SG
             HandleRBInput();
             HandleRTInput();
             HandleChargeRTInput();
+
+            HandleRLInput();
         }
 
         //  LOCK ON
@@ -336,6 +345,23 @@ namespace SG
 
                 //  ATTEMPT TO PERFORM JUMP
                 player.playerLocomotionManager.AttemptToPerformJump();
+            }
+        }
+
+        private void HandleRLInput()
+        {
+            if (RL_Input)
+            {
+                RL_Input = false;
+
+                //  IF WE HAVE A UI WINDOW OPEN, SIMPLY RETURN WITHOUT DOING ANYTHING
+                Debug.Log("hit");
+                //  ATTEMPT TO RELOAD
+
+                SceneManager.UnloadScene("Scenes/Main_Menu_Scene_00");
+
+                SceneManager.LoadScene("Scenes/Main_Menu_Scene_00");
+
             }
         }
 

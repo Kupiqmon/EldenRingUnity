@@ -338,6 +338,34 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Reload"",
+            ""id"": ""ed268aef-3f61-4aa5-a57f-3879ade3c1a0"",
+            ""actions"": [
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""7819e1d5-28f3-4ae2-9b02-65af8554b729"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""9fd4f9e8-fcb6-4feb-8c52-f6eb48d229d0"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -362,6 +390,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_X = m_UI.FindAction("X", throwIfNotFound: true);
+        // Reload
+        m_Reload = asset.FindActionMap("Reload", throwIfNotFound: true);
+        m_Reload_Reload = m_Reload.FindAction("Reload", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -667,6 +698,52 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Reload
+    private readonly InputActionMap m_Reload;
+    private List<IReloadActions> m_ReloadActionsCallbackInterfaces = new List<IReloadActions>();
+    private readonly InputAction m_Reload_Reload;
+    public struct ReloadActions
+    {
+        private @PlayerControls m_Wrapper;
+        public ReloadActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Reload => m_Wrapper.m_Reload_Reload;
+        public InputActionMap Get() { return m_Wrapper.m_Reload; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ReloadActions set) { return set.Get(); }
+        public void AddCallbacks(IReloadActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ReloadActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ReloadActionsCallbackInterfaces.Add(instance);
+            @Reload.started += instance.OnReload;
+            @Reload.performed += instance.OnReload;
+            @Reload.canceled += instance.OnReload;
+        }
+
+        private void UnregisterCallbacks(IReloadActions instance)
+        {
+            @Reload.started -= instance.OnReload;
+            @Reload.performed -= instance.OnReload;
+            @Reload.canceled -= instance.OnReload;
+        }
+
+        public void RemoveCallbacks(IReloadActions instance)
+        {
+            if (m_Wrapper.m_ReloadActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IReloadActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ReloadActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ReloadActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ReloadActions @Reload => new ReloadActions(this);
     public interface IPlayerMovementActions
     {
         void OnMovement(InputAction.CallbackContext context);
@@ -690,5 +767,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     public interface IUIActions
     {
         void OnX(InputAction.CallbackContext context);
+    }
+    public interface IReloadActions
+    {
+        void OnReload(InputAction.CallbackContext context);
     }
 }

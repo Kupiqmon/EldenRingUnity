@@ -17,6 +17,7 @@ namespace SG
         [Header("VFX")]
         [SerializeField] GameObject bloodSplatterVFX;
 
+
         protected virtual void Awake()
         {
             character = GetComponent<CharacterManager>();
